@@ -29,7 +29,7 @@
         random.info();
     </script>
         <script>
-         const randoms ={
+            const randoms ={
             name:"Tutorial",
             video:["javascript","this","keyword"],
             info(){
@@ -42,5 +42,18 @@
         randoms.info();
         
     </script>
+
+        const randoms = {
+        name: "Tutorial",
+        video: ["javascript", "this", "keyword"],
+        info() {
+        this.video.forEach(function (tag) {
+            console.log(this.name, tag);
+        }, this);  // 👈 Passing 'this' explicitly
+    }
+};
+
+randoms.info();
+
 </body>
 </html>

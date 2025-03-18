@@ -28,5 +28,19 @@
         }
         random.info();
     </script>
+        <script>
+         const randoms ={
+            name:"Tutorial",
+            video:["javascript","this","keyword"],
+            info(){
+                this.video.forEach(function(tag){
+                console.log(tag)
+            })
+        }
+
+        }
+        randoms.info();
+        
+    </script>
 </body>
 </html>
